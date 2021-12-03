@@ -1,0 +1,72 @@
+:root {
+    --dark:rgb(77, 77, 77);
+    --blue: rgb(111, 111, 255);
+    --white: white;
+}
+
+* {
+    margin:0px;
+    padding:0px;
+    font-size:24px;
+    font-family: serif;
+}
+
+body {
+    background-color: var(--dark);
+    color:var(--blue);
+    text-align: center;
+}
+
+#top-page {
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+#top-page h1 {
+    font-size:250%;
+    padding-bottom: 30px;
+}
+
+#top-page p {
+    color:var(--white);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.card {
+    flex:1 1 27%;
+    border:3px dashed var(--white);
+    margin: 20px 10px 30px 10px;
+    position:relative;
+    padding:15px;
+}
+
+.card h1 {
+    border:3px solid var(--white);
+    font-size: 150%;
+    padding:7px;
+    margin:0 auto;
+    position:absolute;
+    top:-30px;
+    width:90%;
+    left:0;
+    right:0;
+    background-color: var(--dark);
+    border-radius: 10px;
+}
+
+.card p {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.card pre {
+    background-color: var(--blue);
+    border-radius: 20px;
+    color:var(--white);
+    padding: 10px;
+}
