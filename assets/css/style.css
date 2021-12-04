@@ -1,7 +1,8 @@
 :root {
-    --dark:rgb(77, 77, 77);
-    --blue: rgb(111, 111, 255);
+    --dark:#4D4D4D;
+    --blue: #3DB6FF;
     --white: white;
+    --blue-background: #443DFF;
 }
 
 * {
@@ -25,6 +26,7 @@ body {
 #top-page h1 {
     font-size:250%;
     padding-bottom: 30px;
+    font-weight: 900;
 }
 
 #top-page p {
@@ -43,6 +45,8 @@ main {
     margin: 20px 10px 30px 10px;
     position:relative;
     padding:15px;
+    display:flex;
+    flex-direction: column;
 }
 
 .card h1 {
@@ -69,4 +73,30 @@ main {
     border-radius: 20px;
     color:var(--white);
     padding: 10px;
+    flex:1 1 50%;
+}
+
+/* pseudo classes */
+
+.card:hover,
+.card:focus {
+    box-shadow: 0px 5px 30px var(--blue-background);
+}
+
+.card:hover h1 {
+    box-shadow: 0px 5px 30px var(--blue-background);
+}
+
+/* media query */
+
+@media screen and (max-width: 992px){
+    .card {
+        flex: 1 1 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        flex: 1 1 100%;
+    }
 }
