@@ -17,84 +17,83 @@
             <section class="card">
                 <h1>Making Variables</h1>
                 <p>
-                How to structure the code for ccs variables.
+                    How to structure the code for ccs variables.
                 </p>
-                <pre>
-                    <code>
-:root {
+                <pre><code>:root {
     --varname: content;
+}</code></pre>
+            </section>
+            <section class="card">
+                <header>
+                    <h1>Linear Gradients</h1>
+                </header>
+                <p>
+                    Creates a background linear gradient from top to bottom.
+                </p>
+                <pre><code>.linear-gradient-background {
+background-image: linear-gradient(
+    rgba(232, 102, 236, 0.3) 0%,
+    rgba(232, 102, 236, 0.6) 100%
+);
+}</code></pre>
+            </section>
+            <section class="card">
+                <header>
+                    <h1>Box Transition Glow</h1>
+                </header>
+                <p>
+                    Use transition and box shadows to glow on hover.
+                </p>
+                <pre><code>.code-card .card-header {
+border-radius: 8px;
+transition: all 0.5s ease-in-out;
 }
-                    </code>
-                </pre>
+​
+.code-card:hover,
+.code-card:hover .card-header {
+box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+}</code></pre>
             </section>
             <section class="card">
                 <header>
-                    <h1>Title Text</h1>
+                    <h1>Media Query</h1>
                 </header>
                 <p>
-                    Sample description text.
+                    Primarily used for formatting between devices.
                 </p>
-                <pre>
-                    <code>
-
-                    </code>
-                </pre>
+                <pre><code>@media screen and (max-width: 992px){
+    .card {
+        flex: 1 1 40%;
+    }
+}</code></pre>
             </section>
             <section class="card">
                 <header>
-                    <h1>Title Text</h1>
+                    <h1>Text-Wrap With <span id="pre">pre</span></h1>
                 </header>
                 <p>
-                Sample description text.
+                    For things like sharing blocks of code, when the 'pre' tag is used this property can be leveraged to still allow text-wrapping.
                 </p>
-                <pre>
-                    <code>
-                        
-                    </code>
-                </pre>
+                <pre><code>pre {
+    white-space: pre-wrap;
+}</code></pre>
             </section>
             <section class="card">
                 <header>
-                    <h1>Title Text</h1>
+                    <h1>CSS Grid Layout</h1>
                 </header>
                 <p>
-                    Sample description text.
+                    Build a 12-column layout using CSS Grid
                 </p>
-                <pre>
-                    <code>
-                        
-                    </code>
-                </pre>
-            </section>
-            <section class="card">
-                <header>
-                    <h1>Title Text</h1>
-                </header>
-                <p>
-                    Sample description text.
-                </p>
-                <pre>
-                    <code>
-                        
-                    </code>
-                </pre>
-            </section>
-            <section class="card">
-                <header>
-                    <h1>Title Text</h1>
-                </header>
-                <p>
-                    Sample description text.
-                </p>
-                <pre>
-                    <code>
-                        
-                    </code>
-                </pre>
+                <pre><code>.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12, 1fr);
+}</code></pre>
             </section>
         </main>
         <footer>
-            
+            <h2>Made by Michael Hranek</h2>
         </footer>
     </body>
 </html>
